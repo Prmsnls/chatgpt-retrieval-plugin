@@ -1,7 +1,7 @@
 {
   "schema_version": "v1",
   "name_for_human": "5Dollarjobs",
-  "name_for_model": "5_dollar_jobs",
+  "name_for_model": "five_dollar_jobs",
   "description_for_human": "Manages your Ads and tasks on 5dollerjobs.com!",
   "description_for_model": "An app for managing a user's Ads and tasks on 5dollerjobs.com",
   "api": {
