@@ -76,6 +76,7 @@ def get_ads(
 ):
     response = get_ads_data()
     all_ads = response.get("data", {}).get("asyncnewui_ads", [])
-    all_objects = [item['title'] for item in all_ads]
+
+    all_objects = [f"{item['title']} Link: https://5dollarjobs.com/ad/{item['id']}"  for item in all_ads] 
     return JSONResponse(status_code=200, content=all_objects)
 

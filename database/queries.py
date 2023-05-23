@@ -7,6 +7,7 @@ def get_ads_data():
     body = """
             query GetAllAds {
                     asyncnewui_ads(order_by: {views: desc_nulls_last}) {
+                        id
                         title
                     }
                 }
