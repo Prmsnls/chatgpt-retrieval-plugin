@@ -4,9 +4,14 @@
   "name_for_model": "5_dollar_jobs",
   "description_for_human": "Manages your Ads and tasks on 5dollerjobs.com!",
   "description_for_model": "An app for managing a user's Ads and tasks on 5dollerjobs.com",
-  "api": { "url": "/openapi.json" },
-  "auth": { "type": "none" },
-  "logo_url": "https://example.com/logo.png",
+  "api": {
+    "type": "openapi",
+    "url": "/openapi.json"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://chatgpt-retrieval-plugin-5lrvqt2z2q-uc.a.run.app/.well-known/logo.png",
   "legal_info_url": "http://example.com",
   "contact_email": "vishal.bende06@gmail.com"
 }
