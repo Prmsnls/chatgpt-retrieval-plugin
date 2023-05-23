@@ -1,12 +1,12 @@
 {
   "schema_version": "v1",
-  "name_for_human": "TODO Manager",
-  "name_for_model": "todo_manager",
-  "description_for_human": "Manages your TODOs!",
-  "description_for_model": "An app for managing a user's TODOs",
+  "name_for_human": "5Dollarjobs",
+  "name_for_model": "5_dollar_jobs",
+  "description_for_human": "Manages your Ads and tasks on 5dollerjobs.com!",
+  "description_for_model": "An app for managing a user's Ads and tasks on 5dollerjobs.com",
   "api": { "url": "/openapi.json" },
   "auth": { "type": "none" },
   "logo_url": "https://example.com/logo.png",
   "legal_info_url": "http://example.com",
-  "contact_email": "hello@example.com"
+  "contact_email": "vishal.bende06@gmail.com"
 }
