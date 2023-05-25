@@ -84,7 +84,7 @@ def get_ads(
 
 
 @app.get("/create/task/{title}")
-def create_job(
+def create_task(
     title: str
 ):
     title = urllib.parse.quote(title)
