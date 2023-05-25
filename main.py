@@ -82,8 +82,9 @@ def get_ads(
 
 
 
-@app.get("/create/job")
+@app.get("/create/job/{title}")
 def create_job(
+    title: str
 ):
-    all_objects = { "create_job_link": f"https://5dollarjobs.com/add-job"} 
+    all_objects = { "create_job_link": f"https://5dollarjobs.com/job-details?title={title}"} 
     return JSONResponse(status_code=200, content=all_objects)
