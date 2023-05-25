@@ -7,6 +7,7 @@ from starlette.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from database.queries import get_ads_data
 from operator import itemgetter
+import urllib.parse
 
 
 
@@ -86,5 +87,6 @@ def get_ads(
 def create_job(
     title: str
 ):
+    title = urllib.parse.quote(title)
     all_objects = { "create_job_link": f"https://5dollarjobs.com/job-details?title={title}"} 
     return JSONResponse(status_code=200, content=all_objects)
