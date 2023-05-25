@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  title: telegram bot
+  title: 5DollarJobs Plugin
   version: 0.1.0
 paths:
   /ads:
@@ -13,4 +13,19 @@ paths:
           content:
             application/json:
               schema: {}
+  /create/job:
+    get:
+      summary: Create Job
+      operationId: create_job_create_job_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  create_job_link: 
+                    type: string
+              
 

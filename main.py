@@ -12,11 +12,11 @@ from operator import itemgetter
 
 
 app = FastAPI(
-        title="telegram bot",
+        title="5DollarJobs Plugin",
         openapi_tags=[
             {
                 "name": "Backend",
-                "description": "telegram bot",
+                "description": "5DollarJobs Plugin",
             },
         ],
         docs_url="/docs",
@@ -80,3 +80,10 @@ def get_ads(
     all_objects = [f"{item['title']} Link: https://5dollarjobs.com/ad/{item['id']}"  for item in all_ads] 
     return JSONResponse(status_code=200, content=all_objects)
 
+
+
+@app.get("/create/job")
+def create_job(
+):
+    all_objects = { "create_job_link": f"https://5dollarjobs.com/add-job"} 
+    return JSONResponse(status_code=200, content=all_objects)
