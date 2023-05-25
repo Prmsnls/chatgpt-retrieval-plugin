@@ -83,10 +83,10 @@ def get_ads(
 
 
 
-@app.get("/create/job/{title}")
+@app.get("/create/task/{title}")
 def create_job(
     title: str
 ):
     title = urllib.parse.quote(title)
-    all_objects = { "create_job_link": f"https://5dollarjobs.com/job-details?title={title}"} 
+    all_objects = { "create_task_link": f"https://5dollarjobs.com/job-details?title={title}"} 
     return JSONResponse(status_code=200, content=all_objects)

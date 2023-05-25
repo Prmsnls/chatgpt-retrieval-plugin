@@ -13,10 +13,10 @@ paths:
           content:
             application/json:
               schema: {}
-  /create/job/{title}:
+  /create/task/{title}:
     get:
-      summary: Create Job
-      operationId: create_job_create_job__title__get
+      summary: Create Task
+      operationId: create_task_create_task__title__get
       parameters:
         - required: true
           schema:
@@ -32,7 +32,7 @@ paths:
               schema:
                 type: object
                 properties:
-                  create_job_link:
+                  create_task_link:
                     type: string
         '422':
           description: Validation Error
